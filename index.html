@@ -31,17 +31,17 @@
     <!-- HOME SECTION DESIGN -->
     <section class="home" id="home">
         <div class="home-content">
-            <h3>Hi, Myself</h3>
+            <h3>Hello, my name is</h3>
             <h1>Christine Wu</h1>
             <h3>And I'm a <span class="multiple-text"></span></h3>
             <p>Currently a MathCS junior student studying at UC San Diego. Minoring Data Science and Business Econ.</p>
             <div class="social-media">
-                <a href=mailto:"chw081@ucsd.edu"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/christine-wu-2bab27243/"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/chwu3615/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:cwu20210923@gmail.com?subject=PortfolioContactMe&body=Hello%20World"><i class="fa-solid fa-envelope" target="_blank"></i></a>
+                <a href="https://www.linkedin.com/in/christine-wu-2bab27243/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="http://www.instagram.com/chwu3615"><i class="fa-brands fa-instagram" target="_blank"></i></a>
                 <a href="http://discord.com/users/894108075932413972/"><i class="fa-brands fa-discord"></i></a>
             </div>
-            <a href="files/ChristineWu-Spring2024.pdf" download class="btn">Download CV</a>
+            <a href="files/ChristineWu-Spring2024.pdf" class="btn" download>Download CV</a>
         </div>
 
         <div class="home-img">
@@ -166,15 +166,15 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
 
-        <form action="#">
+        <form action="#" id="contact-form">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" id="email" name="email" placeholder="Email Address" required>
             </div>
 
             <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
+                <input type="number" id="mobile" name="mobile" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject" required>
             </div>
             <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
             <input type="submit" value="Send Message" class="btn">
@@ -197,6 +197,9 @@
 
     <!-- TYPED JS -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- SMTP JS -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
     <!-- MAIN JS -->
     <script src="JS/main.js"></script>

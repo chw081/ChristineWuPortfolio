@@ -57,3 +57,14 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop: true
 });
+
+/* ------------------------------------- contact form ------------------------------------- */
+window.onload = function() {
+    document.getElementById("contact-form").addEventListener("submit", alertSubFunc);
+}
+
+function alertSubFunc() {
+    let email = document.getElementById("email").value;
+    //console.log(email);
+    alert("Subscriber \"added\":" + email)
+}
