@@ -44,6 +44,7 @@ section {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    /*border-bottom: 2px solid rgba(0, 0, 0, 0.05);*/
 }
 
 .logo {
@@ -51,6 +52,15 @@ section {
     color: var(--text-color);
     font-weight: 700;
     cursor: default;
+}
+
+.brand-color-text {
+    display: inline;
+    color: var(--main-color);
+    font-weight: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
 }
 
 .navbar a {
