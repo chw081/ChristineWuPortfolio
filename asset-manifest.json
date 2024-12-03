@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/christinewuwebsite/static/css/main.d6664b25.css",
+    "main.js": "/christinewuwebsite/static/js/main.29d4eb24.js",
+    "static/js/453.5dad12e1.chunk.js": "/christinewuwebsite/static/js/453.5dad12e1.chunk.js",
+    "index.html": "/christinewuwebsite/index.html",
+    "main.d6664b25.css.map": "/christinewuwebsite/static/css/main.d6664b25.css.map",
+    "main.29d4eb24.js.map": "/christinewuwebsite/static/js/main.29d4eb24.js.map",
+    "453.5dad12e1.chunk.js.map": "/christinewuwebsite/static/js/453.5dad12e1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d6664b25.css",
+    "static/js/main.29d4eb24.js"
+  ]
+}
