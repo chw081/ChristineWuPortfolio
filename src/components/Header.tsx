@@ -60,7 +60,7 @@ const Header: React.FC = () => {
   
     return (
         <header className="header">
-        <a href="#" className="logo">
+        <a href="#home" className="logo">
           Christine<span className="brand-color-text">Wu</span>
         </a>
         <i className="fa-solid fa-bars" id="menu-icon"></i>

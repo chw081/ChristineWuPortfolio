@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 
 const About: React.FC = () => {
     return (
         <section className="about" id="about">
         <div className="about-img">
-          <img src="img/aboutme.jpg" alt="About me" />
+          <img src={`${process.env.PUBLIC_URL}/img/aboutme.jpg`} alt="About Me" />
         </div>
         <div className="about-content">
           <h2 className="heading">ABOUT <span>Me</span></h2>

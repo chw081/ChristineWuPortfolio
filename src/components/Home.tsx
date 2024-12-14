@@ -72,7 +72,7 @@ const Home: React.FC = () => {
         </div>
 
         <div className="home-img">
-          <img src="img/profiledp.jpeg" alt="Christine Wu" />
+          <img src={`${process.env.PUBLIC_URL}/img/profiledp.jpeg`} alt="Christine Wu" />
         </div>
       </section>
     )

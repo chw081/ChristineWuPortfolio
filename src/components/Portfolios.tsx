@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Portfolios: React.FC = () => {
     return (
@@ -8,7 +8,7 @@ const Portfolios: React.FC = () => {
         </h2>
         <div className="portfolio-container">
           <div className="portfolio-box">
-              <img src="img/pj1.jpeg" alt="" />
+              <img src={`${process.env.PUBLIC_URL}/img/pj1.jpeg`} alt="" />
               <div className="portfolio-layer">
                   <h4>UCSD NGH Group</h4>
                   <p>Real-time ultrasound image segmentation projects.</p>
@@ -17,7 +17,7 @@ const Portfolios: React.FC = () => {
           </div>
 
           <div className="portfolio-box">
-              <img src="img/pj2.jpeg" alt="" />
+              <img src={`${process.env.PUBLIC_URL}/img/pj2.jpeg`} alt="" />
               <div className="portfolio-layer">
                   <h4>Banking APP</h4>
                   <p>A personal modern banking platform with finance management dashboard for everyone.</p>
@@ -26,7 +26,7 @@ const Portfolios: React.FC = () => {
           </div>
 
           <div className="portfolio-box">
-              <img src="img/pj0.jpeg" alt="" />
+              <img src={`${process.env.PUBLIC_URL}/img/pj0.jpeg`} alt="" />
               <div className="portfolio-layer">
                   <h4>Music Playlist</h4>
                   <p>A music player app with a song database, playback modes, playlists, and convenient controls.</p>
@@ -35,7 +35,7 @@ const Portfolios: React.FC = () => {
           </div>
 
           <div className="portfolio-box">
-              <img src="img/pj4.jpeg" alt="" />
+              <img src={`${process.env.PUBLIC_URL}/img/pj4.jpeg`} alt="" />
               <div className="portfolio-layer">
                   <h4>2048 Game</h4>
                   <p>A popular single-player puzzle game of merging tiles to get 2048.</p>
@@ -44,7 +44,7 @@ const Portfolios: React.FC = () => {
           </div>
 
           <div className="portfolio-box">
-              <img src="img/pj5.jpeg" alt="" />
+              <img src={`${process.env.PUBLIC_URL}/img/pj5.jpeg`} alt="" />
               <div className="portfolio-layer">
                   <h4>Recipes&Ratings</h4>
                   <p>Predicting relationship between the features of recipes 
@@ -54,7 +54,7 @@ const Portfolios: React.FC = () => {
           </div>
 
           <div className="portfolio-box">
-              <img src="img/pj6.jpeg" alt="" />
+              <img src={`${process.env.PUBLIC_URL}/img/pj6.jpeg`} alt="" />
               <div className="portfolio-layer">
                   <h4>Manim Tutorial</h4>
                   <p>Manim python explanatory mathematical videos that helps instructor in
