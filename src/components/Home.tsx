@@ -50,7 +50,7 @@ const Home: React.FC = () => {
           </ul>
 
           <div className="home-cta">
-            <a href="#portfolio" className="btn btn-primary">
+            <a href="#projects" className="btn btn-primary">
               View Projects
             </a>
             <button type="button" className="btn btn-secondary" onClick={openResume}>

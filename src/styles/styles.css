@@ -341,109 +341,23 @@ span {
     box-shadow: 0 0 1rem var(--main-color);
 }
 
-.about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    background: var(--snd-bf-color);
-}
-
-.about-img img {
-    width: 35vw;
-}
-
 .heading {
     text-align: center;
     font-size: 4.5rem;
 }
 
-.about-content h2 {
-    text-align: left;
-    line-height: 1.2;
-}
-
-.about-content h3 {
-    font-size: 2.6rem;
-}
-
-.about-content p {
-    font-size: 1.6rem;
-    margin: 2rem 0 3rem;
-}
-
-.services h2 {
-    margin-bottom: 5rem;
-}
-
-.services-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-.services-container .services-box {
-    flex: 1 1 30rem;
-    background: var(--snd-bf-color);
-    padding: 3rem 2rem 4rem;
-    border-radius: 2rem;
-    text-align: center;
-    border: .2rem solid var(--bg-color);
-    transition: .5s ease;
-}
-
-.services-container .services-box:hover {
-    border-color: var(--main-color);
-    transform: scale(1.02);
-}
-
-.services-box {
-    display: flex;
-    flex-direction: column;  
-    justify-content: space-between;
-    min-height: 36rem;
-}
-
-.services-box i {
-    font-size: 7rem;
-    color: var(--main-color);
-}
-
-.services-box h3 {
-    font-size: 2.6rem;
-}
-
-.services-box p {
-    font-size: 1.6rem;
-    margin: 1rem 0 3rem;
-}
-
-.services-box .btn {
-    margin-top: auto;  /* Push the button to the bottom */
-}
-
-.portfolio {
-    background: var(--snd-bf-color);
-}
-
-.portfolio h2 {
+.projects h2 {
     margin-bottom: 4rem;
 }
 
-.portfolio h3 {
-    font-size: 2.5rem;
-}
-
-.portfolio-container {
+.projects-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 2.5rem;
 }
 
-.portfolio-container .portfolio-box {
+.projects-container .projects-box {
     position: relative;
     border-radius: 2rem;
     box-shadow: 0 0 1rem var(--bg-color);
@@ -451,17 +365,17 @@ span {
     display: flex;
 }
 
-.portfolio-box img {
+.projects-box img {
     width: 100%;
     transition: .5s ease;
     opacity: 0.7;
 }
 
-.portfolio-box:hover img {
+.projects-box:hover img {
     transform: scale(1.1);
 }
 
-.portfolio-box .portfolio-layer {
+.projects-box .projects-layer {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -478,20 +392,20 @@ span {
     transition: .5s ease;
 }
 
-.portfolio-box:hover .portfolio-layer {
+.projects-box:hover .projects-layer {
     transform: translateY(0);
 }
 
-.portfolio-layer h4 {
+.projects-layer h4 {
     font-size: 3rem;
 }
 
-.portfolio-layer p {
+.projects-layer p {
     font-size: 1.6rem;
     margin: .3rem 0 1rem;
 }
 
-.portfolio-layer a {
+.projects-layer a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -501,9 +415,126 @@ span {
     border-radius: 50%;
 }
 
-.portfolio-layer a i {
+.projects-layer a i {
     font-size: 2rem;
     color: var(--snd-bf-color);
+}
+
+.experience {
+    background: var(--snd-bf-color);
+}
+
+.experience h2 {
+    margin-bottom: 4rem;
+}
+
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+.experience-card {
+    background: var(--bg-color);
+    border: 1px solid var(--border-subtle);
+    border-radius: 1.2rem;
+    padding: 2.4rem 3rem;
+}
+
+.experience-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 1.2rem;
+}
+
+.experience-card h3 {
+    font-size: 2.2rem;
+    margin-bottom: 0.4rem;
+}
+
+.experience-company {
+    font-size: 1.6rem;
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.experience-period {
+    font-size: 1.4rem;
+    color: var(--text-subtle);
+    white-space: nowrap;
+}
+
+.experience-summary {
+    font-size: 1.6rem;
+    line-height: 1.7;
+    color: var(--text-muted);
+    margin-bottom: 1.6rem;
+}
+
+.experience-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    list-style: none;
+}
+
+.experience-stack li {
+    font-size: 1.3rem;
+    color: var(--text-muted);
+    padding: 0.5rem 1.2rem;
+    border: 1px solid var(--border-subtle);
+    border-radius: 0.6rem;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.skills {
+    background: var(--snd-bf-color);
+}
+
+.skills h2 {
+    margin-bottom: 4rem;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+.skills-card {
+    background: var(--bg-color);
+    border: 1px solid var(--border-subtle);
+    border-radius: 1.2rem;
+    padding: 2.4rem 3rem;
+}
+
+.skills-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.6rem;
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    list-style: none;
+}
+
+.skills-list li {
+    font-size: 1.3rem;
+    color: var(--text-muted);
+    padding: 0.5rem 1.2rem;
+    border: 1px solid var(--border-subtle);
+    border-radius: 0.6rem;
+    background: rgba(255, 255, 255, 0.03);
 }
 
 .contact h2 {
@@ -596,11 +627,11 @@ span {
         padding: 10rem 3%;
     }
 
-    .services {
-        padding: 7rem;
+    .experience {
+        padding-bottom: 7rem;
     }
 
-    .portfolio {
+    .skills {
         padding-bottom: 7rem;
     }
 
@@ -679,36 +710,29 @@ span {
         flex-wrap: wrap;
     }
 
-    .about {
-        flex-direction: column;
-    }
-
-    .about-img img {
-        width: 90vw;
-        margin-top: 4rem;
-    }
-
-    .services h2 {
+    .projects h2,
+    .experience h2,
+    .skills h2 {
         margin-bottom: 3rem;
     }
 
-    .portfolio h2 {
-        margin-bottom: 3rem;
+    .skills-container {
+        grid-template-columns: 1fr;
     }
 
-    .portfolio-container {
+    .projects-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .experience-card-header {
+        flex-direction: column;
+        gap: 0.8rem;
     }
 }
 
 @media (max-width: 617px) {
-    .portfolio-container {
+    .projects-container {
         grid-template-columns: 1fr;
-    }
-
-    .about-img img {
-        width: 100vw;
-        margin-top: 4rem;
     }
 }
 
