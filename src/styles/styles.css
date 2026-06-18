@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 * {
     margin: 0;
@@ -16,6 +16,9 @@
     --snd-bf-color: #262B40;
     --text-color: #fff;
     --main-color: #59B2F4;
+    --text-muted: rgba(255, 255, 255, 0.72);
+    --text-subtle: rgba(255, 255, 255, 0.48);
+    --border-subtle: rgba(255, 255, 255, 0.08);
 }
 
 html {
@@ -81,71 +84,244 @@ section {
     display: none;
 }
 
-.home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-}
-
-.home-content h3 {
-    font-size: 3.2rem;
-    font-weight: 700;
-}
-
-.home-content h3:nth-of-type(2) {
-    margin-bottom: 2rem;
-}
-
 span {
     color: var(--main-color);
 }
 
-.home-content h1 {
-    font-size: 5.6rem;
-    font-weight: 700;
-    line-height: 1.3;
-}
-
-.home-img img {
-    width: 25vw;
-    animation: floatImage 4s ease-in-out infinite;
-}
-
-@keyframes floatImage {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-2.4rem);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
-.home-content p {
-    font-size: 1.6rem;
-}
-
-.social-media a {
-    display: inline-flex;
-    justify-content: center;
+/* Hero */
+.home {
+    display: flex;
     align-items: center;
-    width: 4rem;
-    height: 4rem;
-    background: transparent;
-    border-radius: 50%;
-    font-size: 2rem;
-    color: var(--main-color);
-    margin: 3rem 1.5rem 3rem 0;
-    transition: .5s ease;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
-.social-media a:hover {
+.home-inner {
+    display: grid;
+    grid-template-columns: 1fr min(32vw, 36rem);
+    align-items: center;
+    gap: clamp(3rem, 5vw, 6rem);
+    width: 100%;
+    max-width: 110rem;
+    margin: 0 auto;
+}
+
+.home-eyebrow {
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-subtle);
+    margin-bottom: 1.6rem;
+}
+
+.home-name {
+    font-size: clamp(4rem, 6vw, 6.4rem);
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    color: var(--text-color);
+    margin-bottom: 1.6rem;
+}
+
+.home-headline {
+    font-size: clamp(1.8rem, 2.5vw, 2.4rem);
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--text-color);
+    max-width: 58rem;
+    margin-bottom: 2rem;
+}
+
+.home-summary {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: var(--text-muted);
+    max-width: 58rem;
+    margin-bottom: 2.4rem;
+}
+
+.home-domains {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    list-style: none;
+    margin-bottom: 3.2rem;
+}
+
+.home-domains li {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    padding: 0.5rem 1.2rem;
+    border: 1px solid var(--border-subtle);
+    border-radius: 0.6rem;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.home-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    margin-bottom: 2.4rem;
+}
+
+.home .btn {
+    border-radius: 0.8rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0;
+    padding: 1.2rem 2rem;
+    cursor: pointer;
+    transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.home button.btn {
+    font-family: inherit;
+}
+
+.home .btn-primary {
     background: var(--main-color);
-    color: var(--snd-bf-color);
-    box-shadow: 0 0 1rem var(--main-color);
+    color: var(--bg-color);
+}
+
+.home .btn-primary:hover {
+    background: #7cc4f7;
+    box-shadow: none;
+}
+
+.home .btn-secondary {
+    background: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--border-subtle);
+}
+
+.home .btn-secondary:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.04);
+    box-shadow: none;
+}
+
+.home-links {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.4rem;
+}
+
+.home-links a {
+    color: var(--text-subtle);
+    font-weight: 500;
+    transition: color 0.15s ease;
+}
+
+.home-links a:hover {
+    color: var(--text-color);
+}
+
+.home-links-divider {
+    color: var(--border-subtle);
+    user-select: none;
+}
+
+.home-media {
+    width: 100%;
+    max-width: min(32vw, 36rem);
+    justify-self: end;
+}
+
+.home-media img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    height: auto;
+    object-fit: cover;
+    border-radius: 1.6rem;
+    border: 1px solid var(--border-subtle);
+}
+
+/* Resume modal */
+.resume-modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.72);
+    backdrop-filter: blur(4px);
+}
+
+.resume-modal {
+    display: flex;
+    flex-direction: column;
+    width: min(96vw, 90rem);
+    height: min(90vh, 80rem);
+    background: var(--snd-bf-color);
+    border: 1px solid var(--border-subtle);
+    border-radius: 1.2rem;
+    overflow: hidden;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.resume-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.6rem;
+    padding: 1.6rem 2rem;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.resume-modal-header h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.resume-modal-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.resume-modal .btn-sm {
+    font-size: 1.3rem;
+    padding: 0.8rem 1.4rem;
+}
+
+.resume-modal-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.6rem;
+    height: 3.6rem;
+    margin-left: 0.4rem;
+    border-radius: 0.6rem;
+    background: transparent;
+    color: var(--text-muted);
+    font-size: 2.4rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease;
+}
+
+.resume-modal-close:hover {
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--text-color);
+}
+
+.resume-modal-body {
+    flex: 1;
+    min-height: 0;
+    background: #0f1320;
+}
+
+.resume-modal-frame {
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 
 .btn {
@@ -464,25 +640,43 @@ span {
         margin: 3rem 0;
     }
 
-    .home {
-        flex-direction: column;
-    }
-
-    .home-content h3 {
-        font-size: 2.6rem;
-    }
-
-    .home-content h1 {
-        font-size: 5rem;
+    .home-inner {
+        grid-template-columns: 1fr;
+        gap: 4rem;
     }
 
     .home-content {
         order: 2;
     }
 
-    .home-img img {
-        width: 70vw;
-        margin-top: 4rem;
+    .home-media {
+        order: 1;
+        width: 100%;
+        max-width: 100%;
+        justify-self: stretch;
+    }
+
+    .home-cta .btn {
+        flex: 1 1 auto;
+        text-align: center;
+    }
+
+    .resume-modal-overlay {
+        padding: 1rem;
+    }
+
+    .resume-modal {
+        width: 100%;
+        height: 92vh;
+    }
+
+    .resume-modal-header {
+        flex-wrap: wrap;
+        padding: 1.2rem 1.6rem;
+    }
+
+    .resume-modal-actions {
+        flex-wrap: wrap;
     }
 
     .about {
@@ -510,11 +704,6 @@ span {
 @media (max-width: 617px) {
     .portfolio-container {
         grid-template-columns: 1fr;
-    }
-
-    .home-img img {
-        width: 80vw;
-        margin-top: 8rem;
     }
 
     .about-img img {
