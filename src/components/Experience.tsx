@@ -4,25 +4,33 @@ const workExperiences = [
   {
     role: "Software Engineer",
     company: "HerPower AI",
-    period: "2024 – Present",
+    period: "2025 – 2026",
     summary:
-      "Built full-stack community systems including auth, forums, events, and admin workflows. Developed production TypeScript APIs backed by PostgreSQL for early-stage startup platform features.",
-    stack: ["TypeScript", "PostgreSQL", "React", "Full-stack"],
+      "Shipped full-stack features for an early-stage AI startup community platform—auth, forums, events, and admin workflows—using React and TypeScript. Built production REST APIs on PostgreSQL, owning schema design and backend services that support core user flows in a fast-release environment.",
+    stack: ["TypeScript", "PostgreSQL", "React", "REST APIs"],
   },
   {
-    role: "ML Research Developer",
+    role: "Software Development Engineer",
+    company: "Convoloo.com",
+    period: "2025",
+    summary:
+      "Built a full-stack AI book generation platform with Streamlit, LangChain, and OpenAI GPT, enabling multi-page personalized children's books with coordinated narrative and DALL·E 3 illustration pipelines. Designed LLM prompt orchestration and backend APIs, improving text-to-image consistency and reducing generation latency by 28% while shipping MVP to production.",
+    stack: ["LangChain", "OpenAI", "DALL·E 3", "Python", "Streamlit"],
+  },
+  {
+    role: "AI Research Assistant",
     company: "UC San Diego Health",
-    period: "2023 – 2024",
+    period: "2024 – 2025",
     summary:
-      "Developed deep learning systems for medical imaging, including real-time ultrasound segmentation models and deployed ML pipelines for clinical research workflows.",
-    stack: ["Python", "TensorFlow", "Medical Imaging", "ML Pipelines"],
+      "Developed deep learning models for real-time ultrasound image segmentation in a clinical research environment. Built end-to-end ML pipelines with TensorFlow—from data preprocessing through model training and deployment—supporting production-oriented medical imaging workflows.",
+    stack: ["Python", "TensorFlow", "Computer Vision", "ML Pipelines"],
   },
   {
-    role: "Software Developer Intern",
+    role: "Software Engineer Intern",
     company: "Hainan Current Culture Media Co., Ltd.",
-    period: "Jul – Sep 2023",
+    period: "2023",
     summary:
-      "Built interactive math tutorials with Python Manim, optimized rendering performance, and integrated visualization components into responsive web platforms.",
+      "Built interactive educational software with Python Manim, generating programmatic math animations for web-based learning products. Optimized rendering pipelines and integrated visualization components into responsive web UIs, improving page load and animation performance.",
     stack: ["Python", "Manim", "Web Development"],
   },
 ];

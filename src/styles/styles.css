@@ -556,9 +556,9 @@ span {
 
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    max-width: 90rem;
+    max-width: 110rem;
     margin: 0 auto;
 }
 
@@ -680,6 +680,10 @@ span {
 
     section {
         padding: 10rem 3%;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .experience {
