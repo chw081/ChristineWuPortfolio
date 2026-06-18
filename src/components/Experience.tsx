@@ -1,6 +1,6 @@
 import React from "react";
 
-const experiences = [
+const workExperiences = [
   {
     role: "Software Engineer",
     company: "HerPower AI",
@@ -27,30 +27,72 @@ const experiences = [
   },
 ];
 
+const education = [
+  {
+    degree: "B.S. in Mathematics–Computer Science",
+    school: "University of California, San Diego",
+    location: "San Diego, CA",
+    period: "Sep 2021 – Jun 2025",
+    details: "Minors in Data Science and Business Economics",
+    extracurricular: [
+      { name: "Triton Quantitative Trading" },
+      { name: "Chinese Computer Community" },
+    ],
+  },
+];
+
 const Experience: React.FC = () => {
   return (
     <section className="experience" id="experience">
       <h2 className="heading">
-        Work <span>Experience</span>
+        Experience <span>& Education</span>
       </h2>
       <div className="experience-container">
-        {experiences.map((item) => (
-          <article className="experience-card" key={`${item.company}-${item.period}`}>
-            <div className="experience-card-header">
-              <div>
-                <h3>{item.role}</h3>
-                <p className="experience-company">{item.company}</p>
+        <div className="experience-group">
+          <h3 className="experience-subheading">Work Experience</h3>
+          {workExperiences.map((item) => (
+            <article className="experience-card" key={`${item.company}-${item.period}`}>
+              <div className="experience-card-header">
+                <div>
+                  <h3>{item.role}</h3>
+                  <p className="experience-company">{item.company}</p>
+                </div>
+                <span className="experience-period">{item.period}</span>
               </div>
-              <span className="experience-period">{item.period}</span>
-            </div>
-            <p className="experience-summary">{item.summary}</p>
-            <ul className="experience-stack">
-              {item.stack.map((tech) => (
-                <li key={tech}>{tech}</li>
-              ))}
-            </ul>
-          </article>
-        ))}
+              <p className="experience-summary">{item.summary}</p>
+              <ul className="experience-stack">
+                {item.stack.map((tech) => (
+                  <li key={tech}>{tech}</li>
+                ))}
+              </ul>
+            </article>
+          ))}
+        </div>
+
+        <div className="experience-group">
+          <h3 className="experience-subheading">Education</h3>
+          {education.map((item) => (
+            <article className="experience-card" key={`${item.school}-${item.period}`}>
+              <div className="experience-card-header">
+                <div>
+                  <h3>{item.degree}</h3>
+                  <p className="experience-company">{item.school}</p>
+                </div>
+                <span className="experience-period">
+                  {item.period} · {item.location}
+                </span>
+              </div>
+              <p className="experience-summary">{item.details}</p>
+              <ul className="education-activities">
+                {item.extracurricular.map((activity) => (
+                  <li key={activity.name}>
+                    <strong>{activity.name}</strong>
+                  </li>
+                ))}
+              </ul>
+            </article>
+          ))}
+        </div>
       </div>
     </section>
   );
