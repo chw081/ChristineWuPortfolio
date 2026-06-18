@@ -36,17 +36,19 @@ const Home: React.FC = () => {
           </p>
 
           <p className="home-summary">
-            New grad with shipped features at early-stage startups and medical AI research.
-            At HerPower AI, built full-stack community systems — auth, forums, events, admin
-            workflows — and TypeScript APIs on PostgreSQL. At UC San Diego Health, developed
-            real-time segmentation models and deployed ML pipelines for medical imaging.
+            UC San Diego graduate with production experience across AI startups, LLM applications,
+            and medical imaging research. Shipped full-stack platform features at HerPower AI and
+            an AI book generation system with LangChain and DALL·E at Convoloo. At UC San Diego
+            Health, built deep learning pipelines for real-time ultrasound segmentation.
           </p>
 
           <ul className="home-domains" aria-label="Technical focus areas">
-            <li>Full-stack</li>
-            <li>AI systems</li>
+            <li>AI & LLMs</li>
+            <li>Full-Stack</li>
+            <li>Machine Learning</li>
+            <li>Python</li>
             <li>TypeScript</li>
-            <li>PostgreSQL</li>
+            <li>System Design</li>
           </ul>
 
           <div className="home-cta">
