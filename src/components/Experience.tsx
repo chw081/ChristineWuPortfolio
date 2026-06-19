@@ -30,8 +30,8 @@ const workExperiences = [
     company: "Hainan Current Culture Media Co., Ltd.",
     period: "2023",
     summary:
-      "Built interactive educational software with Python Manim, generating programmatic math animations for web-based learning products. Optimized rendering pipelines and integrated visualization components into responsive web UIs, improving page load and animation performance.",
-    stack: ["Python", "Manim", "Web Development"],
+      "Built Python backend workflows for an educational platform, generating Manim math animations and integrating visualization services with web clients. Optimized content rendering pipelines and end-to-end delivery performance across the learning product.",
+    stack: ["Python", "REST APIs", "Manim", "Web Development"],
   },
 ];
 
