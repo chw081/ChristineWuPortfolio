@@ -8,6 +8,24 @@ const Projects: React.FC = () => {
       </h2>
       <div className="projects-container">
         <div className="projects-box">
+          <img src={`${process.env.PUBLIC_URL}/img/pj4.jpeg`} alt="Email Agent project" />
+          <div className="projects-layer">
+            <h4>Email Agent</h4>
+            <p>
+              An AI-powered personal email assistant that drafts and refines replies with context-aware prompts and
+              structured workflows.
+            </p>
+            <a
+              href="https://github.com/chw081/Personal-Email-Agent"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-solid fa-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <div className="projects-box">
           <img src={`${process.env.PUBLIC_URL}/img/pj1.jpeg`} alt="UCSD NGH Group project" />
           <div className="projects-layer">
             <h4>UCSD NGH Group</h4>
@@ -44,21 +62,6 @@ const Projects: React.FC = () => {
             <p>A music player app with a song database, playback modes, playlists, and convenient controls.</p>
             <a
               href="https://github.com/chw081/Music-Playlist"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fa-solid fa-up-right-from-square"></i>
-            </a>
-          </div>
-        </div>
-
-        <div className="projects-box">
-          <img src={`${process.env.PUBLIC_URL}/img/pj4.jpeg`} alt="2048 game project" />
-          <div className="projects-layer">
-            <h4>2048 Game</h4>
-            <p>A popular single-player puzzle game of merging tiles to get 2048.</p>
-            <a
-              href="https://github.com/chw081/2048-Puzzle-Game"
               target="_blank"
               rel="noopener noreferrer"
             >
